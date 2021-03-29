@@ -1,0 +1,30 @@
+.header-section {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    padding: 1rem 0;
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo {
+        cursor: pointer;
+
+        span {
+            color: yellowgreen;
+        }
+    }
+
+    .nav-item {
+        cursor: pointer;
+        &:hover {
+            color: yellowgreen;
+        }
+    }
+}
