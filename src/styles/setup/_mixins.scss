@@ -1,7 +1,7 @@
 /* Media queries Breakpoint mixins */
 
 @mixin for-narrow-layout {
-  @media (max-width: $breakNarrow) {
+  @media (min-width: $breakNarrow) {
     @content;
   }
 }

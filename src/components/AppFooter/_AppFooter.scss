@@ -1,0 +1,24 @@
+.footer-section {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 24rem;
+    background-color: $black;
+    color: $white;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-logo {
+        cursor: pointer;
+
+    }
+
+    .nav-item {
+        font-size: 1.4rem;
+        line-height: 2.8rem
+    }
+}

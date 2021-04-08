@@ -1,0 +1,92 @@
+.main-section {
+    background-color: $black;
+    color: $white;
+    height: 76.1rem;
+    position: relative;
+
+    .main-section-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-content-container {
+            display: flex;
+            align-items: center;
+
+            >*:not(:last-child) {
+                margin-inline-end: 12.5rem;
+            }
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            align-self: flex-start;
+
+            >svg {
+                position: absolute;
+                height: 1rem;
+                top: -5rem;
+                left: 0;
+            }
+
+            h2 {
+                margin-bottom: 1.6rem;
+                max-width: 44.5rem;
+                line-height: 5.6rem;
+            }
+
+            p {
+                width: 47rem;
+                margin-bottom: 0;
+            }
+        }
+
+        .dishes-content {
+            display: flex;
+            flex-direction: column;
+
+            .item-container {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                >svg {
+                    position: absolute;
+                    top: 3.8rem;
+                    left: 9rem;
+
+                }
+
+                &:not(:first-child) {
+                    padding-top: 2.4rem;
+                }
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid hsla(0, 0%, 100%, 0.151);
+                    padding-bottom: 2.4rem;
+                }
+
+                >*:not(:last-child) {
+                    margin-inline-end: 6.2rem;
+                }
+
+                h3 {
+                    font-size: 1.8rem;
+                    margin-bottom: 0.4rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    line-height: 2.8rem;
+                }
+            }
+
+            img {
+                width: 12.8rem;
+                z-index: 3;
+            }
+        }
+    }
+}

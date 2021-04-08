@@ -1,0 +1,132 @@
+.sub-section {
+    background-color: $white;
+    color: $black;
+    height: 145.4rem;
+    position: relative;
+
+    @include for-narrow-layout {
+        height: 141.1rem;
+    }
+
+    .sub-container {
+        padding-top: 37.6rem;
+        padding-inline-end: 4rem;
+
+        @include for-narrow-layout {
+            padding-top: 16.5rem;
+        }
+
+        .enjoyable-img {
+            position: absolute;
+            top: -6rem;
+            left: 2.4rem;
+            height: 40rem;
+            width: 32.7rem;
+
+            @include for-narrow-layout {
+                top: -6rem;
+                left: 19rem;
+                height: initial;
+                width: initial;
+            }
+        }
+
+        .localy-img {
+            position: absolute;
+            bottom: -6rem;
+            right: 19rem;
+            z-index: 2;
+        }
+
+        h2 {
+            width: 32.7rem;
+            line-height: 4rem;
+            font-size: 3.2rem;
+            text-align: center;
+            
+            @include for-narrow-layout {
+                text-align: left;
+                line-height: 5.6rem;
+                width: unset;
+                max-width: 40rem;
+                font-size: 4rem;
+            }
+        }
+
+        p {
+            max-width: 45rem;
+            font-size: 1.5rem;
+
+            @include for-narrow-layout {
+                font-size: 1.8rem;
+                max-width: 45rem;
+            }
+        }
+    }
+
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 53rem;
+
+        @include for-narrow-layout {
+            align-items: flex-end;
+        }
+
+
+        >svg {
+            position: absolute;
+            width: 89.5rem;
+            height: 32rem;
+            display: none;
+
+            @include for-narrow-layout {
+                display: initial;
+                top: 18rem;
+                left: 0;
+            }
+        }
+
+        .sub-first-container {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+
+            >svg {
+                height: 4rem;
+            }
+
+            >*:not(:last-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+
+    .second-container {
+
+        >svg {
+            position: absolute;
+            width: 89.5rem;
+            height: 32rem;
+            bottom: 0;
+            right: 0;
+        }
+
+        .sub-second-container {
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+
+            >svg {
+                height: 4rem;
+            }
+
+            >*:not(:last-child) {
+                margin-bottom: 1.6rem;
+            }
+        }
+
+    }
+}

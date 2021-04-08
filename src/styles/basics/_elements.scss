@@ -1,3 +1,12 @@
+
+.primary-button {
+  height: 6.4rem;
+  width: 24.5rem;
+  background-color: $black;
+  color: $white;
+  border: 1px solid $white;
+}
+
 @keyframes blur {
   0% {
     background-color: rgba(0, 0, 0, 0);

@@ -11,7 +11,12 @@
 @import './basics/layout';
 
 // COMPONENTS
-@import '../components/AppHeader/AppHeader';
+@import '../components/HeadSection/HeadSection';
+@import '../components/SubSection/SubSection';
+@import '../components/MainSection/MainSection';
+@import '../components/BottomSection/BottomSection';
+@import '../components/SubFooter/SubFooter';
+@import '../components/AppFooter/AppFooter';
 @import '../components/Loader/Loader';
 
 

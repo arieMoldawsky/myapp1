@@ -1,0 +1,19 @@
+.sub-footer-section {
+    background-color: $black;
+    color: $white;
+    height: 24rem;
+    background-image: url(../../assets/homepage/ready-bg-desktop.jpg);
+    margin-bottom: 24rem;
+
+    .sub-footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            background-color: transparent;
+        }
+    }
+
+    
+}
